@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PORTFOLIO</title>
+  <link rel="stylesheet" href="css/about.css">
+  <script>
+    // Typewriter Effect Function
+    function typeWriter(elementId, text, speed) {
+      let i = 0;
+      let element = document.getElementById(elementId);
+      function typing() {
+        if (i < text.length) {
+          element.innerHTML += text.charAt(i);  
+          i++;
+          setTimeout(typing, speed);  
+        }
+      }
+      typing();  
+    }
+
+    
+    window.onload = function() {
+      const headingText = "About Me";  
+      typeWriter("aboutHeading", headingText, 100);  
+    };
+  </script>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="portfolio.html">HOME</a>
+      <a href="#" class="active">ABOUT</a>
+      <a href="education.html">EDUCATION</a>
+       <a href="skills.html">SKILLS</a>
+      <a href="interest.html">INTEREST</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+ 
+    <div class="about-section">
+        <div class="inner-container">
+            
+            <h1 id="aboutHeading"></h1> 
+
+            <p class="text">
+              I consider myself a personable, approachable, and dependable individual with a strong sense of integrity and punctuality. I thrive both in collaborative environments and when working independently, as I am highly self-motivated and goal-oriented. I possess strong listening and communication skills, which allow me to interact effectively with others. With a creative mindset, I am always eager to take on new challenges. Additionally, I am well-organized and prioritize careful planning to ensure efficient time management.
+            </p>
+
+            <div class="skills">
+                <span>My Portfolio</span>
+                <span>Lhiamae C. Gatchalian</span>
+                <span>BSIT-3F</span>
+            </div>
+        </div>
+    </div>
+  </header>
+</body>
+</html>

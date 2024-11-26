@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PORTFOLIO</title>
+  <link rel="stylesheet" href="about.css">
+  <script>
+    // Typewriter Effect Function
+    function typeWriter(elementId, text, speed) {
+      let i = 0;
+      let element = document.getElementById(elementId);
+      function typing() {
+        if (i < text.length) {
+          element.innerHTML += text.charAt(i); 
+          i++;
+          setTimeout(typing, speed); 
+        }
+      }
+      typing(); 
+    }
+
+    
+    window.onload = function() {
+      const headingText = "Interest"; 
+      typeWriter("aboutHeading", headingText, 100);  
+    };
+  </script>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="portfolio.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="education.html">EDUCATION</a>
+      <a href="skills.html">SKILLS</a>
+      <a href="#" class="active">INTEREST</a>
+    <a href="contact.html">CONTACT</a>
+    </nav>
+ 
+    <div class="about-section">
+        <div class="inner-container">
+         
+            <h1 id="aboutHeading"></h1>
+
+            <p class="text">
+        I am passionate about innovative design and the creative process, constantly seeking unique ways to blend technology with art, particularly in the realm of UI/UX design. I believe that the fusion of user-centered design with technological advancements can create truly immersive experiences. Beyond my professional interests, I am an avid lover of outdoor activities such as hiking, running, and exploring nature. These activities not only allow me to disconnect and recharge but also inspire my work by helping me stay energized, focused, and grounded. 
+
+            <div class="skills">
+                <span>My Portfolio</span>
+                <span>Lhiamae C. Gatchalian</span>
+                <span>BSIT-3F</span>
+            </div>
+        </div>
+    </div>
+  </header>
+</body>
+</html>

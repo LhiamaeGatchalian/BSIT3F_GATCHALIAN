@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PORTFOLIO</title>
+  <link rel="stylesheet" href="css/about.css">
+  <script>
+   
+    function typeWriter(elementId, text, speed) {
+      let i = 0;
+      let element = document.getElementById(elementId);
+      function typing() {
+        if (i < text.length) {
+          element.innerHTML += text.charAt(i); 
+          i++;
+          setTimeout(typing, speed); 
+        }
+      }
+      typing(); 
+    }
+
+   
+    window.onload = function() {
+      const headingText = "Education"; 
+      typeWriter("aboutHeading", headingText, 100); 
+  </script>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="portfolio.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="#" class="active">EDUCATION</a>
+       <a href="skills.html">SKILLS</a>
+        <a href="interest.html">INTEREST</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+ 
+    <div class="about-section">
+        <div class="inner-container">
+          
+            <h1 id="aboutHeading"></h1>
+            <p class="text">
+          I am currently enrolled in the Bachelor of Science in Information Technology program at City of Malabon University, with an expected graduation date of May 2026. Throughout my academic journey, I have consistently maintained a strong academic standing, achieving a GPA of 1.5. My coursework has provided me with a solid foundation in various essential areas of IT, including Software Development, Data Structures and Algorithms, Network Security, Database Management, and Web Development. 
+            <div class="skills">
+                <span>My Portfolio</span>
+                <span>Lhiamae C. Gatchalian</span>
+                <span>BSIT-3F</span>
+            </div>
+        </div>
+    </div>
+  </header>
+</body>
+</html>
