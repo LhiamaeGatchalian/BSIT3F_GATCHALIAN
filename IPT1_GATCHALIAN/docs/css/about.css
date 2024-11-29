@@ -40,7 +40,7 @@ body{
 }
 
 .about-section {
-    background: url('bg.jpg') no-repeat center center;
+    background: url('img/bg.jpg') no-repeat center center;
     background-size: cover;
     background-color: white;
     overflow: hidden;
