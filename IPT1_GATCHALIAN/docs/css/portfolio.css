@@ -48,10 +48,10 @@ body{
     width: 60%;              
     margin-top: 0px;              
     margin-left: 350px;
-    position: fix;
+    postion: fix;
 }
 
-.img {
+img {
     max-width: 350px;
     border-radius: 1000px;
     position: fix;
