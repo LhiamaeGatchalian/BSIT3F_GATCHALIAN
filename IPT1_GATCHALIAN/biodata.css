@@ -1,0 +1,32 @@
+h1{
+	text-align: center;
+	font-size: 70px;
+	margin-top: 5%;
+}
+
+.textboxID {
+	border: 2px solid #000;
+	width:200px;
+	height: 200px;
+	margin-top: 10;
+	background-color:white;
+	position: absolute;
+	margin-left: 85%;
+}
+
+.textboxPD{
+	border: 2px solid black;
+	width: 50;
+	margin: 20px;
+	background-color:black;
+}
+.textboxPD h2{
+	color:white;
+	font-size:;
+}
+.textboxPI {
+	width: 1000px;
+	margin: auto;
+	border: 2px solid #000;
+	padding: 20px;
+}
